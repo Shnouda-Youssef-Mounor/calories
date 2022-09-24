@@ -1,0 +1,132 @@
+body {
+    width: 100%;
+    background-color: burlywood;
+}
+
+.cal {
+    background-color: green;
+    animation: changebg 5s linear infinite;
+}
+
+@keyframes changebg {
+    0% {
+        background-color: green;
+    }
+    25% {
+        background-color: red;
+    }
+    50% {
+        background-color: rgb(0, 0, 0);
+    }
+    75% {
+        background-color: blue;
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+.bord {
+    background-color: rgb(255, 215, 162);
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 500px;
+    width: 768px;
+    border: 0.2ch black solid;
+    border-top-right-radius: 20deg;
+    box-shadow: 10px 10px;
+    animation: changebr 5s linear infinite;
+}
+
+.main {
+    margin-left: 30%;
+}
+
+.view {
+    text-align: center;
+    text-decoration: wavy;
+    color: black;
+    width: 200px;
+    height: 30px;
+    border: 0.2ch black solid;
+    animation: change 4s linear infinite;
+}
+
+.view:hover {
+    border-color: black;
+    animation: changebr 4s linear infinite;
+}
+
+@keyframes changebr {
+    0% {
+        border-color: black;
+    }
+    25% {
+        border-color: red;
+    }
+    50% {
+        border-color: green;
+    }
+    75% {
+        border-color: blue;
+    }
+    100% {
+        border-color: black;
+    }
+}
+
+.view:active {
+    border: 0.2ch green solid;
+}
+
+img {
+    margin: 0;
+    margin-left: -15%;
+    padding: 0;
+    width: auto;
+}
+
+label {
+    margin-left: 3px;
+    animation: change 4s linear infinite;
+}
+
+.cal {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 40px;
+}
+
+p {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    animation: change 4s linear infinite;
+}
+
+.by {
+    margin-top: 10%;
+    font-size: medium;
+    font-weight: bold;
+    animation: change 4s linear infinite;
+}
+
+@keyframes change {
+    0% {
+        color: black;
+    }
+    25% {
+        color: red;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: blue;
+    }
+    100% {
+        color: black;
+    }
+}
